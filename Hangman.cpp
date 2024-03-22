@@ -90,35 +90,22 @@ void displayHangman(int attempts) {
 }
 
 int main() {
-    // Word bank
-    vector<string> wordBank = {"hangman", "programming", "computer", "algorithm", "variable", "function", "apple", "banana", "orange", "grape", "strawberry", "blueberry", "pineapple", "watermelon", "kiwi", "mango", "cat", "dog", "bird", "fish", "hamster", "rabbit", "turtle", "guinea pig", "ferret", "parrot",
-"horse", "cow", "pig", "sheep", "goat", "chicken", "duck", "goose", "turkey", "rooster", "deer", "bear", "lion", "tiger", "elephant", "giraffe", "zebra", "hippopotamus", "rhinoceros", "kangaroo",
-"koala", "panda", "monkey", "gorilla", "chimpanzee", "orangutan", "sloth", "bat", "fox", "wolf",
-"seal", "walrus", "otter", "penguin", "dolphin", "whale", "shark", "octopus", "squid", "jellyfish",
-"starfish", "crab", "lobster", "shrimp", "snail", "slug", "caterpillar", "butterfly", "bee", "ant",
-"grasshopper", "cricket", "spider", "scorpion", "centipede", "millipede", "cockroach", "mosquito", "dragonfly", "ladybug",
-"beetle", "moth", "fly", "wasp", "hornet", "lizard", "snake", "frog", "toad", "salamander",
-"tortoise", "chameleon", "iguana", "crocodile", "alligator", "komodo dragon", "turtle", "gecko", "anaconda", "cobra",
-"python", "viper", "mamba", "rattlesnake", "black mamba", "green anaconda", "king cobra", "diamondback", "boaconstrictor"
-"peach", "pear", "plum", "cherry", "apricot", "lemon", "lime", "coconut", "pomegranate", "raspberry",
-"blackberry", "cantaloupe", "nectarine", "fig", "cranberry", "dragonfruit", "guava", "passionfruit", "lychee",
-"tangerine", "persimmon", "grapefruit", "papaya", "melon", "jackfruit", "kiwifruit", "avocado", "durian",
-"breadfruit", "starfruit", "plantain", "cherimoya", "gooseberry", "boysenberry", "mulberry", "elderberry",
-"rhubarb", "date", "currant", "aprium", "quince", "soursop", "kumquat", "ackee", "cloudberry", "loquat",
-"tamarillo", "ugli fruit", "yuzu", "salak", "pawpaw", "horned melon", "feijoa", "rambutan", "jabuticaba",
-"cupuacu", "soursop", "carambola", "mangosteen", "langsat", "longan", "sapodilla", "chayote", "custard apple",
-"guanabana", "honeydew", "persimmon", "sugar apple", "breadnut", "tamarind", "tomato", "potato", "carrot",
-"cucumber", "lettuce", "onion", "garlic", "broccoli", "cauliflower", "celery", "spinach", "kale",
-"asparagus", "zucchini", "eggplant", "bell pepper", "beet", "radish", "turnip", "cabbage", "squash",
-"chair", "table", "desk", "sofa", "bed", "wardrobe", "bookcase", "couch", "ottoman", "bench",
-"stool", "shelf", "cabinet", "dresser", "mirror", "nightstand", "vanity", "futon", "armchair", "recliner",
-"loveseat", "sectional", "chaise", "hutch", "buffet", "barstool", "rocking chair", "daybed", "beanbag", "trundle bed",
-"murphy bed", "chest", "lounge chair", "pouf", "cot", "dining table", "coffee table", "end table", "console table", "accent table",
-"sideboard", "tv stand", "entertainment center", "credenza", "dressing table", "settee", "kitchen island", "wine rack", "etagere", "vanity table",
-"writing desk", "breakfast nook", "workbench", "computer desk", "gaming chair", "standing desk", "trestle table", "nesting tables", "picnic table", "bar table",
-"camping chair", "adirondack chair", "swing chair", "sling chair", "zero gravity chair", "director's chair", "patio table", "lawn chair", "folding chair", "rocker",
-"office chair", "swivel chair", "club chair", "wingback chair", "barrel chair", "papasan chair", "rocking bench", "chaise longue", "chesterfield", "chifforobe",
-"poof", "poof chair", "deck chair", "sling chair", "saucer chair", "chase", "lawn chair", "butterfly chair", "hassock", "seat"};
+    // Word bank (animals and food)
+    vector<string> wordBank = {"cat", "dog", "fish", "bird", "elephant", "monkey",
+                               "apple", "banana", "orange", "strawberry", "grape", "watermelon",
+                               "rabbit", "deer", "chicken", "cow", "sheep", "pig", "goat",
+                               "tomato", "potato", "carrot", "lettuce", "cucumber", "onion",
+                               "salmon", "shrimp", "lobster", "crab", "squid", "octopus",
+                               "steak", "chicken", "pork", "beef", "bacon", "sausage",
+                               "cheese", "bread", "butter", "milk", "yogurt", "cream",
+                               "pizza", "pasta", "spaghetti", "burger", "sandwich", "fries",
+                               "cake", "cookie", "pie", "brownie", "cupcake", "icecream",
+                               "soup", "salad", "sushi", "noodle", "rice", "curry",
+                               "hamburger", "hotdog", "taco", "burrito", "quesadilla", "enchilada",
+                               "grapefruit", "melon", "kiwi", "pineapple", "blueberry", "raspberry",
+                               "broccoli", "pepper", "corn", "avocado", "eggplant", "zucchini",
+                               "lobster", "crab", "squid", "octopus", "clam", "oyster",
+                               "smoothie", "juice", "tea", "coffee", "soda", "water"};
 
     // Seed for random word selection
     srand(time(0));
