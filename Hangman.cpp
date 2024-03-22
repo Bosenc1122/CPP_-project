@@ -91,11 +91,8 @@ void displayHangman(int attempts) {
 
 int main() {
     // Word bank
-    vector<string> wordBank = {"hangman", "programming", "computer", "algorithm", "variable", "function",
- "apple", "banana", "orange", "grape", "strawberry", "blueberry", "pineapple", "watermelon", "kiwi", "mango",
- "cat", "dog", "bird", "fish", "hamster", "rabbit", "turtle", "guinea pig", "ferret", "parrot",
-"horse", "cow", "pig", "sheep", "goat", "chicken", "duck", "goose", "turkey", "rooster",
-"deer", "bear", "lion", "tiger", "elephant", "giraffe", "zebra", "hippopotamus", "rhinoceros", "kangaroo",
+    vector<string> wordBank = {"hangman", "programming", "computer", "algorithm", "variable", "function", "apple", "banana", "orange", "grape", "strawberry", "blueberry", "pineapple", "watermelon", "kiwi", "mango", "cat", "dog", "bird", "fish", "hamster", "rabbit", "turtle", "guinea pig", "ferret", "parrot",
+"horse", "cow", "pig", "sheep", "goat", "chicken", "duck", "goose", "turkey", "rooster", "deer", "bear", "lion", "tiger", "elephant", "giraffe", "zebra", "hippopotamus", "rhinoceros", "kangaroo",
 "koala", "panda", "monkey", "gorilla", "chimpanzee", "orangutan", "sloth", "bat", "fox", "wolf",
 "seal", "walrus", "otter", "penguin", "dolphin", "whale", "shark", "octopus", "squid", "jellyfish",
 "starfish", "crab", "lobster", "shrimp", "snail", "slug", "caterpillar", "butterfly", "bee", "ant",
