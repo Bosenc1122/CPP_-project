@@ -90,22 +90,8 @@ void displayHangman(int attempts) {
 }
 
 int main() {
-    // Word bank (animals and food)
-    vector<string> wordBank = {"cat", "dog", "fish", "bird", "elephant", "monkey",
-                               "apple", "banana", "orange", "strawberry", "grape", "watermelon",
-                               "rabbit", "deer", "chicken", "cow", "sheep", "pig", "goat",
-                               "tomato", "potato", "carrot", "lettuce", "cucumber", "onion",
-                               "salmon", "shrimp", "lobster", "crab", "squid", "octopus",
-                               "steak", "chicken", "pork", "beef", "bacon", "sausage",
-                               "cheese", "bread", "butter", "milk", "yogurt", "cream",
-                               "pizza", "pasta", "spaghetti", "burger", "sandwich", "fries",
-                               "cake", "cookie", "pie", "brownie", "cupcake", "icecream",
-                               "soup", "salad", "sushi", "noodle", "rice", "curry",
-                               "hamburger", "hotdog", "taco", "burrito", "quesadilla", "enchilada",
-                               "grapefruit", "melon", "kiwi", "pineapple", "blueberry", "raspberry",
-                               "broccoli", "pepper", "corn", "avocado", "eggplant", "zucchini",
-                               "lobster", "crab", "squid", "octopus", "clam", "oyster",
-                               "smoothie", "juice", "tea", "coffee", "soda", "water"};
+    // Word bank
+    vector<string> wordBank = {"hangman", "programming", "computer", "algorithm", "variable", "function"};
 
     // Seed for random word selection
     srand(time(0));
